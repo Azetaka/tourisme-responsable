@@ -1,4 +1,4 @@
-"""Chargement du JSON brut et mise à plat des votes."""
+"""Chargement du JSON brut et mise à plat des votes"""
 import json
 
 import pandas as pd
