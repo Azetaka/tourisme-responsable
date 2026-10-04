@@ -5,7 +5,12 @@ build/
 dist/
 wheels/
 *.egg-info
-
+data/raw/data_tourisme.json
 # Virtual environments
 .venv
 .DS_Store
+# Données : non publiées
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
