@@ -1,0 +1,36 @@
+[project]
+name = "tourisme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Azetaka", email = "uriel.fagninou67347345@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fr-core-news-sm",
+    "gensim>=4.4.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "pyarrow>=25.0.1",
+    "scikit-learn>=1.9.1",
+    "spacy>=3.8.16",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+tourisme = "tourisme:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+fr-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.8.0/fr_core_news_sm-3.8.0-py3-none-any.whl" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
